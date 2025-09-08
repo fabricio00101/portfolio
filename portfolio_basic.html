@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Fabricio Milanesio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio básico creado con HTML y CSS — editable" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">TM</div>
+        <div>
+          <div style="font-weight:700">Fabricio Milanesio</div>
+          <div style="font-size:13px;color:var(--muted)">Frontend — HTML & CSS</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="intro">
+          <h1>Hola — soy Fabricio Milanesio</h1>
+          <p>Desarrollador web en formación. Hago sitios accesibles y responsive usando solo HTML y CSS.</p>
+
+          <div style="margin-top:16px" class="cards">
+            <div class="card">
+              <h3>Skills</h3>
+              <p>HTML semántico · CSS (Flexbox, Grid) · Responsive</p>
+            </div>
+            <div class="card">
+              <h3>Herramientas</h3>
+              <p>VSCode · Git · GitHub · Inspectores de navegador</p>
+            </div>
+            <div class="card">
+              <h3>Objetivo</h3>
+              <p>Conseguir mi primer trabajo como desarrollador front-end junior</p>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="profile">
+          <img class="avatar" alt="Avatar" src="https://via.placeholder.com/300x300.png?text=Avatar">
+          <strong>Fabricio Milanesio</strong>
+          <div style="color:var(--muted);font-size:14px;margin-top:6px">Resistencia, Chaco</div>
+          <div style="margin-top:12px">
+            <!-- Reemplazá los enlaces por los tuyos -->
+            <a class="btn" href="https://github.com/fabricio00101" target="_blank">Ver GitHub</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="sobre">
+        <h2>Sobre mí</h2>
+        <p style="color:var(--muted)">Breve descripción donde contás tu experiencia como repositor en supermercado, cursos que estás realizando y lo que buscás. Sé breve y claro.</p>
+      </section>
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <img src="./assets/img/project1.png" alt="Proyecto 1">
+            <div class="meta">
+              <h4>Proyecto: Página informativa ficticia de un torneo deportivo local</h4>
+              <p>HTML y CSS — Diseño responsive. 
+                <a href="https://github.com/fabricio00101/asochah-web" target="_blank">Ver código.</a>
+                <a href="https://fabricio00101.github.io/asochah-web/index.html" target="_blank">Ver Demo.</a></p>
+              
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="./assets/img/project2.png" alt="Proyecto 2">
+            <div class="meta">
+              <h4>Proyecto: Galería</h4>
+              <p>Grid responsivo con efectos hover. 
+                <a href="https://github.com/fabricio00101/galeria" target="_blank">Ver en GitHub.</a>
+                <a href="https://fabricio00101.github.io/galeria/" target="_blank">Ver Demo.</a></p>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="https://via.placeholder.com/800x450.png?text=Proyecto+3" alt="Proyecto 3">
+            <div class="meta">
+              <h4>Proyecto: CV Online</h4>
+              <p>Versión web de mi currículum. <a href="#">Ver en GitHub</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <div>
+          <h2>Contacto</h2>
+          <p style="color:var(--muted)">Dejá tus datos y un mensaje. (Este formulario no envía nada — es solo ejemplo HTML/CSS).</p>
+          <form>
+            <div class="row">
+              <input type="text" placeholder="Nombre" />
+              <input type="email" placeholder="Email" />
+            </div>
+            <div style="margin-top:8px">
+              <input type="text" placeholder="Asunto" />
+            </div>
+            <div style="margin-top:8px">
+              <textarea placeholder="Mensaje"></textarea>
+            </div>
+            <div style="margin-top:10px">
+              <button class="btn" type="button">Enviar (demo)</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="profile" style="align-self:start">
+          <strong>Contacto directo</strong>
+          <div style="color:var(--muted);margin-top:8px">Email: <a href="mailto:jfmilanesio@gmail.com">jfmilanesio@gmail.com</a></div>
+          <div style="color:var(--muted);margin-top:6px">Tel: <a href="tel:+543625474620">+54 362 5474620</a></div>
+          <div style="margin-top:12px"><a href="#" class="btn">Descargar CV (PDF)</a></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div>© 2025 Fabricio Milanesio — Hecho con HTML & CSS</div>
+    </footer>
+  </div>
+
+</body>
+</html>
