@@ -1,8 +1,8 @@
 :root{
-  --bg:#f6f7fb;
+  --bg:#f4f1ed;
   --card:#ffffff;
-  --accent:#1f6feb;
-  --muted:#6b7280;
+  --accent:#3b82f6;
+  --muted:#52525b;
   --radius:12px;
   --max-width:1100px;
 }
@@ -16,6 +16,12 @@ header{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .brand{display:flex;align-items:center;gap:12px}
 .logo{width:48px;height:48px;background:linear-gradient(135deg,var(--accent),#7dd3fc);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
 nav a{margin-left:14px;font-weight:600;color:var(--muted)}
+.nombre{
+  font-weight:700
+}
+.subtitulo{
+  font-size:13px;color:var(--muted)
+}
 
 /* Hero */
 .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center;margin-top:28px}
@@ -24,13 +30,23 @@ nav a{margin-left:14px;font-weight:600;color:var(--muted)}
 .profile{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(16,24,40,0.06);text-align:center}
 .avatar{width:120px;height:120px;border-radius:14px;background:#ddd;margin:0 auto 12px;display:block}
 .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;font-weight:600}
+.profile_ubi{
+  color:var(--muted);font-size:14px;margin-top:6px
+}
+.boton_git{
+  margin-top:12px
+}
 
 /* Sections */
 section{margin-top:28px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;
+margin-top:16px}
 .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
 .card h3{margin:0 0 8px}
 .card p{margin:0;color:var(--muted);font-size:14px}
+.sobre_mi_p{
+  color:var(--muted)
+}
 
 /* Projects grid */
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -40,10 +56,39 @@ section{margin-top:28px}
 .project .meta h4{margin:0 0 6px}
 
 /* Contact */
-.contact{display:grid;grid-template-columns:1fr 320px;gap:16px}
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact aside {
+  background: var(--card);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+}
 form .row{display:flex;gap:8px}
 input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:white}
 textarea{min-height:120px}
+.email{
+  color:var(--muted);margin-top:8px
+}
+.tel{
+  color:var(--muted);margin-top:6px
+}
+.cv{
+  margin-top:12px
+}
+.btn:hover {
+  background: #a78bfa; /* tono más claro */
+  transform: scale(1.05); /* efecto de agrandarse un poco */
+  transition: 0.2s ease;
+}
+
+
+
 
 footer{margin-top:36px;padding:18px 0;text-align:center;color:var(--muted);font-size:14px}
 
