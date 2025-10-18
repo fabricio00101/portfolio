@@ -82,9 +82,9 @@ textarea{min-height:120px}
   margin-top:12px
 }
 .btn:hover {
-  background: #a78bfa; /* tono más claro */
-  transform: scale(1.05); /* efecto de agrandarse un poco */
-  transition: 0.2s ease;
+  background: #a78bfa; 
+  transform: scale(1.05); 
+  transition: 0.4s ease;
 }
 
 
