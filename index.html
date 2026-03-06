@@ -1,138 +1,231 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio — Fabricio Milanesio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Portfolio básico creado con HTML y CSS — editable" />
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">FM</div>
-        <div>
-          <div class="nombre">Fabricio Milanesio</div>
-          <div class="subtitulo">Frontend — HTML & CSS</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio — Fabricio Milanesio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Portfolio básico creado con HTML y CSS — editable"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="brand">
+          <div class="logo">FM</div>
+          <div>
+            <div class="nombre">Fabricio Milanesio</div>
+            <div class="subtitulo">Frontend — HTML & CSS</div>
+          </div>
         </div>
-      </div>
-      <nav>
-        <a href="#sobre">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#certificados">Certificados</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </header>
+        <nav>
+          <a href="#sobre">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contacto">Contacto</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+            title="Alternar Modo Oscuro/Claro"
+          >
+            🌙
+          </button>
+        </nav>
+      </header>
 
-    <main>
-      <section class="hero">
-        <div class="intro">
-          <h1>Hola — soy Fabricio Milanesio</h1>
-          <p>Desarrollador web con habilidades Full-Stack. Construyo aplicaciones interactivas con JavaScript, Python (Flask) y CSS moderno.</p>
+      <main>
+        <section class="hero">
+          <div class="intro">
+            <h1>Hola — soy Fabricio Milanesio</h1>
+            <p>
+              Desarrollador web con habilidades Full-Stack. Construyo
+              aplicaciones interactivas con JavaScript, Python (Flask) y CSS
+              moderno.
+            </p>
 
-          <div class="cards">
-            <div class="card">
+            <div class="cards">
+            <div class="card reveal">
               <h3>Skills</h3>
-              <p>HTML/CSS · JavaScript (Fetch, async/await) · Python (Flask) · API REST</p>
+              <p>HTML/CSS · JavaScript (Fetch) · Python (Flask, Django) · API REST</p>
             </div>
-            <div class="card">
-              <h3>Herramientas</h3>
-              <p>VSCode · Git · GitHub · Inspectores de navegador</p>
+            <div class="card reveal">
+              <h3>Herramientas & IA</h3>
+              <p>VSCode · Git · GitHub · Gemini / Antigravity (Flujos de trabajo acelerados por IA y Automatización)</p>
             </div>
-            <div class="card">
+            <div class="card reveal">
               <h3>Objetivo</h3>
               <p>Conseguir mi primer trabajo como desarrollador front-end junior</p>
             </div>
           </div>
-
-        </div>
-
-        <aside class="profile">
-          <img class="avatar" alt="Avatar" src="./assets/img/avatar.jpg">
-          <strong>Fabricio Milanesio</strong>
-          <p class="profile_ubi">Resistencia, Chaco</p>
-          <div class="boton_git">
-
-            <a class="btn" href="https://github.com/fabricio00101" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
           </div>
-        </aside>
-      </section>
 
-      <section id="sobre">
+          <aside class="profile">
+            <img class="avatar" alt="Avatar" src="./assets/img/avatar/avatar.jpg" />
+            <strong>Fabricio Milanesio</strong>
+            <p class="profile_ubi">Resistencia, Chaco</p>
+            <div class="boton_git">
+              <a
+                class="btn"
+                href="https://github.com/fabricio00101"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Ver GitHub</a
+              >
+            </div>
+          </aside>
+        </section>
+
+        <section id="sobre" class="reveal">
         <h2>Sobre mí</h2>
-        <p class="sobre_mi_p">Hola, soy Fabricio Milanesio. Tengo conocimientos sólidos en HTML y CSS, aprendiendo a crear sitios accesibles y adaptables a distintos dispositivos. Además me estoy formando en JavaScript y Python. Me interesa seguir creciendo, sumar nuevos conocimientos y construir experiencia práctica. Mi objetivo es conseguir mi primera oportunidad como frontend junior, donde pueda aprender de un equipo y aportar mi esfuerzo y entusiasmo.</p>
+        <p class="sobre_mi_p">Hola, soy Fabricio Milanesio. Como desarrollador web en formación, aporto una base sólida en HTML, CSS, JavaScript y Python (Flask, Django). Me apasiona resolver problemas complejos a través del código y crear interfaces web eficientes, accesibles y estéticamente limpias. Estoy en constante aprendizaje, investigando nuevas herramientas y buenas prácticas de desarrollo de software. Mi objetivo principal es conseguir mi primera oportunidad como front-end junior o full-stack junior, donde pueda integrarme en un equipo colaborativo, aportar entusiasmo y seguir creciendo profesionalmente.</p>
       </section>
 
-      <section id="proyectos">
+        <section id="proyectos" class="reveal">
         <h2>Proyectos</h2>
         <div class="projects-grid">
-          <article class="project">
-            <img src="./assets/img/project1.png" alt="Proyecto 1">
+          <article class="project reveal">
+            <img src="./assets/img/proyectos/prode-oscar.png" alt="Oscars Prode 2026" loading="lazy">
             <div class="meta">
-              <h4>Página Institucional ASOCHAH</h4>
-              <p>Maquetación de un sitio web multi-página. Práctica de HTML semántico, CSS responsivo y estructura de archivos modular.</p>
-                <a href="https://github.com/fabricio00101/asochah-web" target="_blank" rel="noopener noreferrer">Ver código.</a>
-                <a href="https://fabricio00101.github.io/asochah-web/index.html" target="_blank" rel="noopener noreferrer">Ver Demo.</a>
-              
+              <h4>Oscars Prode 2026</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Vanilla JS</span>
+              </div>
+              <p class="project-description">Aplicación web interactiva para jugar al tradicional Prode de los Premios Oscar. Implementa diseño responsive, Dark Mode, persistencia de datos con LocalStorage y animaciones dinámicas con ScrollReveal, ofreciendo una experiencia de usuario moderna y atractiva.</p>
+              <div class="project-links">
+                <a href="https://github.com/fabricio00101/prode-oscar" target="_blank" rel="noopener noreferrer">Código</a>
+                <a href="https://fabricio00101.github.io/oscars-2026-prode/" target="_blank" rel="noopener noreferrer">Demo</a>
+              </div>
             </div>
           </article>
 
-          <article class="project">
-            <img src="./assets/img/wathclist-creator.png" alt="Proyecto 2">
+          <article class="project reveal">
+            <img src="./assets/img/proyectos/f1-app.png" alt="F1 Season Hub 2026" loading="lazy">
             <div class="meta">
-              <h4>Proyecto: Creador de watchlists (Full Stack)</h4>
-              <p>App Full-Stack (JS + Python/Flask) para crear 'watchlists'. Consume la API de TMDb y una API REST propia para gestionar los datos. </p>
+              <h4>F1 Season Hub 2026</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Python/Django</span>
+                <span class="tech-tag">FastF1</span>
+                <span class="tech-tag">HTML/CSS</span>
+              </div>
+              <p class="project-description">Plataforma centralizada para la temporada 2026 de Fórmula 1, desarrollada con Django. Integra la librería FastF1 para mostrar el calendario de carreras y resultados en tiempo real.</p>
+              <div class="project-links">
+                <a href="https://github.com/fabricio00101/f1app" target="_blank" rel="noopener noreferrer">Código</a>
+                <a href="#" style="opacity: 0.5; cursor: not-allowed;" onclick="event.preventDefault()" aria-disabled="true">Demo (Próximamente)</a>
+              </div>
             </div>
-                <a href="https://github.com/fabricio00101/watchlist-creator" target="_blank" rel="noopener noreferrer">Ver en GitHub.</a>
-                <a href="https://fabricio00101.github.io/watchlist-creator/" target="_blank" rel="noopener noreferrer">Ver Demo.</a>
           </article>
 
-          <article class="project">
-            <img src="./assets/img/claro-oscuro.png" alt="Proyecto 3">
+          <article class="project reveal">
+            <img src="./assets/img/proyectos/media-tracker-app.png" alt="Media Tracker App" loading="lazy">
             <div class="meta">
-              <h4>Componente: Toggle Claro/Oscuro</h4>
-              <p>Práctica de manipulación del DOM con JavaScript (classList.toggle) para crear un interruptor de tema (claro/oscuro).</p>
-              <a href="https://github.com/fabricio00101/modo-claro-oscuro" target="_blank" rel="noopener noreferrer">Ver en GitHub.</a>
-              <a href="https://fabricio00101.github.io/modo-claro-oscuro/" target="_blank" rel="noopener noreferrer">Ver Demo.</a>
+              <h4>Media Tracker App</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">BeautifulSoup</span>
+              </div>
+              <p class="project-description">Aplicación Full-Stack para la búsqueda y gestión de contenido multimedia. Desarrollada con Flask y SQLite, incluye un sistema automatizado de web scraping usando BeautifulSoup y una interfaz web estilizada con Bootstrap.</p>
+              <div class="project-links">
+                <a href="https://github.com/fabricio00101/media-tracker" target="_blank" rel="noopener noreferrer">Código</a>
+                <a href="#" style="opacity: 0.5; cursor: not-allowed;" onclick="event.preventDefault()" aria-disabled="true">Demo (Próximamente)</a>
+              </div>
             </div>
           </article>
-          
+
+          <article class="project reveal">
+            <img src="./assets/img/proyectos/hardware-tracker.png" alt="Hardware Price Tracker" loading="lazy">
+            <div class="meta">
+              <h4>Hardware Price Tracker</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Web Scraping</span>
+                <span class="tech-tag">Automatización</span>
+              </div>
+              <p class="project-description">Herramienta automatizada en Python para rastrear, extraer y comparar precios de componentes de hardware en diferentes tiendas mediante técnicas de web scraping intensivo.</p>
+              <div class="project-links">
+                <a href="https://github.com/fabricio00101/hardware-scrapper" target="_blank" rel="noopener noreferrer">Código</a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
-      <section id="certificados"> <h2>Certificados</h2>
-        <div class="certificados-grid">
-          <div class="certificado">
-          <article>
-            <img src="./assets/img/Certificado_Aprobacin_Etapa_1_page-0001.jpg" alt="Informatorio Etapa 1">
-            <h4>Introducción a la programación</h4>
-          </article>
+        <section id="certificados">
+          <h2>Certificados</h2>
+          <div class="certificados-grid">
+            <div class="certificado">
+              <article>
+                <img
+                  src="./assets/img/certificados/Certificado_Aprobacin_Etapa_1_page-0001.jpg"
+                  alt="Informatorio Etapa 1 - Introducción a la programación"
+                  loading="lazy"
+                />
+                <h4>Introducción a la programación</h4>
+              </article>
+            </div>
+            <div class="certificado">
+              <article>
+                <img
+                  src="./assets/img/certificados/Juan Fabricio _jfmilanesiogmail.com_page-0001.jpg"
+                  alt="Curso de iniciación al desarrollo con IA"
+                  loading="lazy"
+                />
+                <h4>Curso de iniciación al desarrollo con IA</h4>
+              </article>
+            </div>
+            <div class="certificado">
+              <article>
+                <img
+                  src="./assets/img/certificados/certificado 2.png"
+                  alt="Certificado de Desarrollo web"
+                  loading="lazy"
+                />
+                <h4>Desarrollo web</h4>
+              </article>
+            </div>
           </div>
-          <div class="certificado">
-          <article>
-            <img src="./assets/img/Juan Fabricio _jfmilanesiogmail.com_page-0001.jpg" alt="Informatorio Etapa 1">
-            <h4>Curso de iniciación al desarrollo con IA</h4>
-          </article>
-          </div>
-        </div>
-      
-      </section>
-      <section id="contacto" class="contact">
-        <aside>
-          <strong>Contacto directo</strong>
-          <div class="email">Email: <a href="mailto:jfmilanesio@gmail.com" rel="noopener noreferrer">jfmilanesio@gmail.com</a></div>
-          <div class="tel">Tel: <a href="tel:+543625474620" rel="noopener noreferrer">+54 362 5474620</a></div>
-          <div class="cv"><a href="./assets/docs/CV Juan Fabricio Milanesio.pdf" class="btn" rel="noopener noreferrer" target="_blank">Descargar CV (PDF)</a></div>
-        </aside>
-      </section>
-    </main>
+        </section>
+        <section id="contacto" class="contact">
+          <aside>
+            <strong>Contacto directo</strong>
+            <div class="email">
+              Email:
+              <a href="mailto:jfmilanesio@gmail.com" rel="noopener noreferrer"
+                >jfmilanesio@gmail.com</a
+              >
+            </div>
+            <div class="tel">
+              Tel:
+              <a href="tel:+543625474620" rel="noopener noreferrer"
+                >+54 362 5474620</a
+              >
+            </div>
+            <div class="cv">
+              <a
+                href="./assets/docs/Curriculum-vitae.pdf_2026_1_15.pdf"
+                class="btn"
+                rel="noopener noreferrer"
+                target="_blank"
+                >Descargar CV (PDF)</a
+              >
+            </div>
+          </aside>
+        </section>
+      </main>
 
-    <footer>
-      <div>© 2025 Fabricio Milanesio — Hecho con HTML & CSS</div>
-    </footer>
-  </div>
-
-</body>
+      <footer>
+        <div>© 2025 Fabricio Milanesio — Hecho con HTML & CSS</div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
